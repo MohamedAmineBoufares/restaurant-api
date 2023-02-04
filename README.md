@@ -21,6 +21,10 @@ Project is created with:
 - Node.js _(18.14.0)_
 - npm _(9.4.1)_
 
+Used database:
+
+- Mongodb Atlas
+
 ## Setup
 
 To run this project, install it locally using npm:
