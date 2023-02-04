@@ -7,7 +7,8 @@
   - [General info](#general-info)
   - [Technologies](#technologies)
   - [Setup](#setup)
-  - [License](#license)
+  - [Project status](#project-status)
+  - [Licence](#licence)
 
 ## General info
 
@@ -15,19 +16,19 @@ A simple restaurant API.
 
 ## Technologies
 
-Project is created with:
+The project is created with:
 
 - Nest.js _(9.0.0)_
 - Node.js _(18.14.0)_
-- npm _(9.4.1)_
+- NPM _(9.4.1)_
 
 Used database:
 
-- Mongodb Atlas
+- MongoDB Atlas
 
 ## Setup
 
-To run this project, install it locally using npm:
+To run this project, install it locally using NPM:
 
 ```bash
 # install dependencies
@@ -44,6 +45,10 @@ $ npm run start:prod
 
 The server should be up and running on [localhost:5000](http://localhost:5000/).
 
-## License
+## Project status
+
+This project is currently in development.
+
+## Licence
 
 [MIT licensed](LICENSE).
