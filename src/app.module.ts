@@ -6,7 +6,7 @@ import { RestaurantModule } from './dish/dish.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      envFilePath: [".env"],
+      envFilePath: ['.env'],
     }),
 
     MongooseModule.forRootAsync({
