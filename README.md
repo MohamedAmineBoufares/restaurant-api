@@ -45,6 +45,8 @@ $ npm run start:prod
 
 The server should be up and running on [localhost:5000](http://localhost:5000/).
 
+To test with [Postman](https://www.postman.com/), you'll find the [exported collection](./postman/restaurant-api.postman_collection.json) in `postman` directory.
+
 ## Project status
 
 This project is currently in development.

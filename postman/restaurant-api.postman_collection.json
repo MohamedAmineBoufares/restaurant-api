@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "13ab167f-209d-452e-a470-6bc4b3cd17df",
+		"name": "Restaurant-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15245435"
+	},
+	"item": [
+		{
+			"name": "POST-dish",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dishPhoto\": \"https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=722&q=80\",\n    \"dishName\": \"Burger Another one!\",\n    \"dishDescription\": \"Burger dish\",\n    \"dishPrice\": 10,\n    \"dishType\": \"main\",\n    \"dishRating\": 4.5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server-url}}/dishes",
+					"host": [
+						"{{server-url}}"
+					],
+					"path": [
+						"dishes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-dishes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server-url}}/dishes",
+					"host": [
+						"{{server-url}}"
+					],
+					"path": [
+						"dishes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-dish-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server-url}}/dishes/63d93cabe9840cabde87c9f2",
+					"host": [
+						"{{server-url}}"
+					],
+					"path": [
+						"dishes",
+						"63d93cabe9840cabde87c9f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE-dish-by-id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{server-url}}/dishes/63f09de76146f0190d622c9e",
+					"host": [
+						"{{server-url}}"
+					],
+					"path": [
+						"dishes",
+						"63f09de76146f0190d622c9e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT-dish-by-id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"dishType\": \"main\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server-url}}/dishes/63f09de76146f0190d622c9e",
+					"host": [
+						"{{server-url}}"
+					],
+					"path": [
+						"dishes",
+						"63f09de76146f0190d622c9e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-dishes-by-dishType",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server-url}}/dishes/by-dishtype?type=dessert",
+					"host": [
+						"{{server-url}}"
+					],
+					"path": [
+						"dishes",
+						"by-dishtype"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "dessert"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET-search-by-dishName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{server-url}}/dishes/search?name=Bu",
+					"host": [
+						"{{server-url}}"
+					],
+					"path": [
+						"dishes",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Bu"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "server-url",
+			"value": "http://localhost:5000",
+			"type": "string"
+		}
+	]
+}
