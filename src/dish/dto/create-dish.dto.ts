@@ -1,4 +1,5 @@
-import { IsNotEmpty, IsNumber, Max, Min } from 'class-validator';
+import { IsEnum, IsNotEmpty, IsNumber, Max, Min } from 'class-validator';
+import { DishType } from 'src/utils/enums/index.enum';
 
 export class CreateDishDto {
   @IsNotEmpty()
@@ -14,6 +15,9 @@ export class CreateDishDto {
   @Min(0)
   @Max(200)
   dishPrice: number;
+
+  @IsEnum(DishType)
+  dishType: DishType;
 
   @IsNumber()
   @Min(0)

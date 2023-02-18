@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 
 import { MongooseModule } from '@nestjs/mongoose';
-import { Dishes, DishesSchema } from './models/dish.schema';
+import { Dishes, DishesSchema } from './schemas/dish.schema';
 import { DishService } from './dish.service';
 import { DishesController } from './dish.controller';
 
