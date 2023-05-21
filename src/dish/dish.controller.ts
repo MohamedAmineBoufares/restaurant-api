@@ -5,8 +5,8 @@ import {
   Get,
   Param,
   Delete,
-  Put,
   Query,
+  Patch,
 } from '@nestjs/common';
 import { DishService } from './dish.service';
 import { CreateDishDto } from './dto/create-dish.dto';
@@ -42,7 +42,7 @@ export class DishesController {
     return this.dishService.getDishById(id);
   }
 
-  @Put(':id')
+  @Patch(':id')
   async updateDish(
     @Param('id') id: string,
     @Body() updateDishDto: UpdateDishDto,

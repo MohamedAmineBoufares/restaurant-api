@@ -86,9 +86,9 @@
 			"response": []
 		},
 		{
-			"name": "PUT-dish-by-id",
+			"name": "PATCH-dish-by-id",
 			"request": {
-				"method": "PUT",
+				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -100,13 +100,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{server-url}}/dishes/63f09de76146f0190d622c9e",
+					"raw": "{{server-url}}/dishes/63f09d016146f0190d622c96",
 					"host": [
 						"{{server-url}}"
 					],
 					"path": [
 						"dishes",
-						"63f09de76146f0190d622c9e"
+						"63f09d016146f0190d622c96"
 					]
 				}
 			},
